@@ -10,6 +10,12 @@
     border-radius: 5px;
     padding: 2rem 0;
     text-align: center;
+    transition: .3s;
+}
+
+.corpo__destaque .destaque__card:hover {
+    background-color: var(--bg-card-hover);
+    cursor: pointer;
 }
 
 .corpo__destaque .destaque__card:nth-child(1) {

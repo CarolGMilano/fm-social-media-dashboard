@@ -36,20 +36,25 @@
 }
 
 .cabecalho__toggle label {
-    width: 55px;
-    height: 25px;
+    width: 65px;
+    height: 30px;
     background: var(--toggle-bg);
-    border-radius: 15px;
+    border-radius: 20px;
     position: relative;
+}
+
+.cabecalho__toggle label:hover {
+    background: var(--toggle-bg-hover);
+    cursor: pointer;
 }
 
 .cabecalho__toggle label:before {
     content: '';
     position: absolute;
-    left: 32px;
-    top: 3px;
-    width: 19px;
-    height: 19px;
+    left: 39px;
+    top: 4px;
+    width: 21px;
+    height: 21px;
     border-radius: 100%;
     background-color: var(--toggle-circle);
 }

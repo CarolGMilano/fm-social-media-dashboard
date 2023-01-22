@@ -17,13 +17,15 @@
   --twitter-border: hsl(203, 89%, 53%);
   --instagram-border: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
   --youtube-border: hsl(348, 97%, 39%);
+  --toggle-bg-hover: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 
-  --fonte: 'Inter', sans-serif;;
+  --fonte: 'Inter', sans-serif;
 }
 
 html[data-theme="light"] {
   --bg: hsl(0, 0%, 100%);
   --bg-card: hsl(227, 47%, 96%);
+  --bg-card-hover: hsl(228, 74%, 92%);
   --text-secun: hsl(228, 12%, 44%);
   --text-princ: hsl(230, 17%, 14%); 
 
@@ -34,9 +36,36 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
   --bg: hsl(230, 17%, 14%);
   --bg-card: hsl(228, 28%, 20%);
+  --bg-card-hover: hsl(230, 19%, 23%);
   --text-secun: hsl(228, 34%, 66%);
   --text-princ: hsl(0, 0%, 100%); 
 
   --toggle-bg: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --toggle-circle: hsl(232, 19%, 15%);
+}
+
+.active:before {
+  animation: toggle-off ease-in-out .3s forwards;
+}
+
+.no-active:before {
+  animation: toggle-on ease-in-out .3s forwards;
+}
+
+@keyframes toggle-off {
+  0% {
+    left: 39px;
+  }
+  100% {
+    left: 5px;
+  }
+}
+
+@keyframes toggle-on {
+  0% {
+    left: 5px;
+  }
+  100% {
+    left: 39px;
+  }
 }

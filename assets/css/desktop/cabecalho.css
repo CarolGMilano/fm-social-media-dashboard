@@ -28,17 +28,4 @@
     .cabecalho__toggle .cabecalho__toggleDescr {
         font-size: 1.2rem;
     }
-
-    .cabecalho__toggle label {
-        width: 65px;
-        height: 30px;
-        border-radius: 20px;
-    }
-    
-    .cabecalho__toggle label:before {
-        left: 39px;
-        top: 4px;
-        width: 21px;
-        height: 21px;
-    }
 }
