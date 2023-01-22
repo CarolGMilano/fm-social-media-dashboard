@@ -1,0 +1,104 @@
+.corpo__destaque {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.corpo__destaque .destaque__card {
+    background-color: var(--bg-card);
+    border-radius: 5px;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.corpo__destaque .destaque__card:nth-child(1) {
+    border-top: 5px solid var(--facebook-border);
+}
+
+.corpo__destaque .destaque__card:nth-child(2) {
+    border-top: 5px solid var(--twitter-border);
+}
+
+.corpo__destaque .destaque__card:nth-child(3) {
+    background-image: var(--instagram-border);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 5px;
+}
+
+.corpo__destaque .destaque__card:nth-child(4) {
+    border-top: 5px solid var(--youtube-border);
+}
+
+.destaque__card .card__rede {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .3rem;
+    margin-bottom: 1.2rem;
+}
+
+.destaque__card .card__rede .rede__icone {
+    width: 20px;
+    height: 20px;
+}
+
+.destaque__card:nth-child(1) .card__rede .rede__icone {
+    background: url('../../img/icon-facebook.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.destaque__card:nth-child(2) .card__rede .rede__icone {
+    background: url('../../img/icon-twitter.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.destaque__card:nth-child(3) .card__rede .rede__icone {
+    background: url('../../img/icon-instagram.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.destaque__card:nth-child(4) .card__rede .rede__icone {
+    background: url('../../img/icon-youtube.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.destaque__card .card__rede .rede__perfil {
+    color: var(--text-secun);
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.destaque__card .card__seguidores {
+    color: var(--text-princ);
+    font-size: 3.5rem;
+}
+
+.destaque__card .card__texto {
+    color: var(--text-secun);
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 1.2rem;
+}
+
+.destaque__card .card__estatistica {
+    color: var(--lime-green);
+    font-size: .8rem;
+    font-weight: 700;
+    background: url('../../img/icon-up.svg') no-repeat;
+    background-position: center left;
+    padding-left: .8rem;
+}
+
+.destaque__card:nth-child(4) .card__estatistica {
+    color: var(--bright-red);
+    background: url('../../img/icon-down.svg') no-repeat;
+    background-position: center left;
+}

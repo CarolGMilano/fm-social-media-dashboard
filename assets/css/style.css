@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('mobile/index.css');
+@import url('mobile/cabecalho.css');
+@import url('mobile/corpo-destaques.css');
+@import url('mobile/corpo-overview.css');
+
+@import url('desktop/index.css');
+@import url('desktop/cabecalho.css');
+@import url('desktop/corpo-destaque.css');
+@import url('desktop/corpo-overview.css');
+
+:root {
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook-border: hsl(208, 92%, 53%);
+  --twitter-border: hsl(203, 89%, 53%);
+  --instagram-border: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube-border: hsl(348, 97%, 39%);
+
+  --fonte: 'Inter', sans-serif;;
+}
+
+html[data-theme="light"] {
+  --bg: hsl(0, 0%, 100%);
+  --bg-card: hsl(227, 47%, 96%);
+  --text-secun: hsl(228, 12%, 44%);
+  --text-princ: hsl(230, 17%, 14%); 
+
+  --toggle-bg: hsl(230, 22%, 74%);
+  --toggle-circle: hsl(225, 100%, 98%); 
+}
+
+html[data-theme="dark"] {
+  --bg: hsl(230, 17%, 14%);
+  --bg-card: hsl(228, 28%, 20%);
+  --text-secun: hsl(228, 34%, 66%);
+  --text-princ: hsl(0, 0%, 100%); 
+
+  --toggle-bg: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --toggle-circle: hsl(232, 19%, 15%);
+}

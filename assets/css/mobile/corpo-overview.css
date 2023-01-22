@@ -1,0 +1,84 @@
+.overview__titulo {
+    color: var(--text-princ);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+.overview__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+}
+
+.overview__container .container__card {
+    background-color: var(--bg-card);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    border-radius: 5px;
+    row-gap: 1rem;
+}
+
+.overview__container .container__card .card__titulo {
+    color: var(--text-secun);
+    font-size: .9rem;
+}
+
+.overview__container .container__card .card__icon {
+    background: url('../../img/icon-facebook.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    justify-self: flex-end;
+}
+
+.overview__container .container__card:nth-child(3) .card__icon,
+.overview__container .container__card:nth-child(4) .card__icon {
+    background: url('../../img/icon-instagram.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.overview__container .container__card:nth-child(5) .card__icon,
+.overview__container .container__card:nth-child(6) .card__icon {
+    background: url('../../img/icon-twitter.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.overview__container .container__card:nth-child(7) .card__icon,
+.overview__container .container__card:nth-child(8) .card__icon {
+    background: url('../../img/icon-youtube.svg') no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.overview__container .container__card .card__numero {
+    color: var(--text-princ);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.overview__container .container__card .card__estatistica {
+    color: var(--lime-green);
+    font-size: .8rem;
+    font-weight: 700;
+    background: url('../../img/icon-up.svg') no-repeat;
+    background-position: center left;
+    padding-left: .8rem;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+.overview__container .container__card:nth-child(2) .card__estatistica,
+.overview__container .container__card:nth-child(7) .card__estatistica,
+.overview__container .container__card:nth-child(8) .card__estatistica {
+    color: var(--bright-red);
+    background: url('../../img/icon-down.svg') no-repeat;
+    background-position: center left;
+    padding-left: .8rem;
+}
+

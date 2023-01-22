@@ -1,0 +1,14 @@
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 4rem 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .corpo {
+        width: 1150px;
+    }
+}
