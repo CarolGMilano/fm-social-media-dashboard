@@ -59,9 +59,7 @@
     background-color: var(--toggle-circle);
 }
 
-.cabecalho__toggle label .cabecalho__toggle {
-    opacity: 0;
-    width: 0;
-    height: 0;
+.cabecalho__toggle .cabecalho__input {
+    display: none;
 }
 
